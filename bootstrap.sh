@@ -2,10 +2,10 @@
 # run with sudo
 
 #install erlang, git, make
-sudo apt-get -y update
-sudo apt-get -y install erlang erlang-doc
-sudo apt-get -y install git
-sudo apt-get -y install make
+apt-get -y update
+apt-get -y install erlang erlang-doc
+apt-get -y install git
+apt-get -y install make
 
 mkdir ~/work
 
