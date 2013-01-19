@@ -14,10 +14,20 @@ mkdir ~/work
 cd ~/work
 git clone https://github.com/tewarbit/blathery.git
 cd blathery
-chmod +x install.sh 
-./install.sh 
+make
+cd ..
+mkdir -p /usr/local/lib/blathery
+cp -r blathery/* /usr/local/lib/blathery
 
 
 # do some cleaning up
 cd ~/work
 rm -rf *
+
+echo
+echo "------"
+echo "Setup complete!"
+echo "Successfully installed erlang, git, make and blathery"
+echo
+echo "Run /usr/local/lib/blathery/start.sh to run blathery"
+echo "------"
